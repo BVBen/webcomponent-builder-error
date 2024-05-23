@@ -5,12 +5,7 @@ import {
   Component,
   OnInit,
 } from '@angular/core';
-import {
-  InterviewForArt,
-  TaxCase,
-  TaxInfoArt,
-} from '@datev/tax-integration/sdk';
-import '@datev/tax-integration';
+import '@my-domain/my-web-component';
 
 @Component({
   selector: 'app-wrapper',
@@ -23,27 +18,5 @@ import '@datev/tax-integration';
 export class WrapperComponent {
 
   constructor() { }
-
-  taxcase: TaxCase = {
-    meta: {
-      version_der_taxonomie: '5.5',
-      veranlagungszeitraum: '2023',
-      taxonomie: 'est',
-    },
-    taxfacts: {
-      personenangaben: [
-        {
-          taxfactid: '0bf82911-de22-15d8-8a75-3cc9088c074d',
-          taxfact_type: 'personenangaben',
-        },
-      ],
-    },
-  };
-
-  interviewConfig: InterviewForArt = {
-    type: 'InterviewForArt',
-    art: TaxInfoArt.AUSGABE,
-    taxCase: this.taxcase,
-  };
 
 }

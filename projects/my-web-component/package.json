@@ -1,12 +1,8 @@
 {
-  "name": "my-web-component",
-  "version": "0.0.1",
-  "peerDependencies": {
-    "@angular/common": "^15.2.0",
-    "@angular/core": "^15.2.0"
-  },
-  "dependencies": {
-    "tslib": "^2.3.0"
-  },
-  "sideEffects": false
-}
+    "name": "@my-domain/my-web-component",
+    "private": false,
+    "version": "0.0.0",
+    "description": "Web Component erstellt mit angular elements",
+    "main": "main.js",
+    "license": "MIT"
+  }
